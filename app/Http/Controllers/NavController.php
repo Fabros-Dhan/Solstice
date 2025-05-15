@@ -10,4 +10,10 @@ class NavController extends Controller
         $page = $request->input('page', 'home');
         return view('home', compact('page'));
     }
+
+    
+    public function auth(Request $request){
+        $authPage = $request->input('authPage', 'login');
+        return view('auth', compact('authPage'));
+    }
 }

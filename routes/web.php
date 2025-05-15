@@ -10,9 +10,13 @@ Route::get('/', function () {
 
 Route::match(['get', 'post'], '/', [NavController::class, 'home']);
 
+
+
 Route::post('/auth', [UserController::class, 'register']);
 
 Route::get('auth', function () {
     return view('auth');
 });
+
+Route::match(['get', 'post'], 'auth', [NavController::class, 'auth']);
 

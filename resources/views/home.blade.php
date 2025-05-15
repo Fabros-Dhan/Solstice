@@ -47,21 +47,21 @@
 <div class="nav-links z-[999] duration-500 md:static absolute bg-white md:min-h-fit min-h-[40vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
         <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
             <li>
-                <form action="/" method="POST">
+                <form action="/" method="GET">
                 @csrf
                 <input type="hidden" name="page" value="home">
                 <button class="hover:text-gray-500">Home</button>
                 </form>
             </li>
             <li>
-                <form action="/" method="POST">
+                <form action="/" method="GET">
                 @csrf
                 <input type="hidden" name="page" value="products">
                 <button class="hover:text-gray-500">Products</button>
                 </form>
             </li>
             <li>
-            <form action="/" method="POST">
+            <form action="/" method="GET">
                 @csrf
                 <input type="hidden" name="page" value="about">
                 <button class="hover:text-gray-500">About</button>
